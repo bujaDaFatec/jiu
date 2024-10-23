@@ -13,5 +13,8 @@
         <?php endforeach; ?>
     </ul>
     <a href="/aulas/adicionar">Adicionar Nova Aula</a>
+
+    <h1>Lista de Aulas</h2>
+    
 </body>
 </html>
