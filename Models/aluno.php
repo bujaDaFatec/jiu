@@ -12,6 +12,7 @@ class Aluno {
         $this->conn = $db;
     }
 
+    // Método para listar alunos
     public function listar() {
         $query = 'SELECT * FROM ' . $this->table;
         $stmt = $this->conn->prepare($query);
@@ -19,6 +20,7 @@ class Aluno {
         return $stmt;
     }
 
+    // Método para adicionar aluno
     public function adicionar() {
         $query = 'INSERT INTO ' . $this->table . ' (nome, faixa, status) VALUES (:nome, :faixa, :status)';
         $stmt = $this->conn->prepare($query);
@@ -31,10 +33,6 @@ class Aluno {
         $stmt->bindParam(':faixa', $this->faixa);
         $stmt->bindParam(':status', $this->status);
 
-        if ($stmt->execute()) {
-            return true;
-        }
-
-        return false;
+        return $stmt->execute();
     }
 }
