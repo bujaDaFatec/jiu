@@ -1,6 +1,6 @@
 <?php
-require_once '../config/Database.php';
-require_once '../models/Aula.php';
+require_once('config/Database.php');
+require_once('models/aula.php');
 
 class AulaController {
     private $aula;

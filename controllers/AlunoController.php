@@ -1,6 +1,6 @@
 <?php
-require_once '../config/Database.php';
-require_once '../models/Aluno.php';
+require_once('config/Database.php');
+require_once('models/aluno.php');
 
 class AlunoController {
     private $aluno;

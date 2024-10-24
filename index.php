@@ -1,7 +1,7 @@
 <?php
-require_once 'controllers/AlunoController.php';  // Corrigido de 'controller' para 'controllers'
-require_once 'controllers/AulaController.php';   // Corrigido de 'controller' para 'controllers'
-require_once 'controllers/PresencaController.php'; // Corrigido de 'controller' para 'controllers'
+require_once('controllers/AlunoController.php');  // Corrigido de 'controller' para 'controllers'
+require_once('controllers/AulaController.php');   // Corrigido de 'controller' para 'controllers'
+require_once('controllers/PresencaController.php'); // Corrigido de 'controller' para 'controllers'
 
 // Roteamento Simples
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
